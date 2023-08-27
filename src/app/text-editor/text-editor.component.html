@@ -1,0 +1,30 @@
+
+<div class="container">
+  <div class="chat-container">
+    <div class="chat-header">User 1</div>
+    <div class="chat-messages">
+      <div class="message user-message" *ngFor="let msg of messages">{{msg}}</div>
+    </div>
+    <div class="input-container">
+      <input type="text" class="input-box" #editor ng-model="message" placeholder="Type your message...">
+      <button class="send-button" (click)="sendMessage()">Send</button>
+    </div>
+  </div>
+
+  
+<div class="chat-container">
+  <div class="chat-header">User 2</div>
+  <div class="chat-messages">
+    <div class="message user-message" *ngFor="let msg of recieved">{{msg}}</div>
+  </div>
+  <div class="input-container">
+    <input type="text" class="input-box" #text1 ng-model="reciever" placeholder="Type your message...">
+    <button class="send-button" (click)="sendMessageToSender()">Send</button>
+  </div>
+</div>
+</div>
+  
+
+
+
+

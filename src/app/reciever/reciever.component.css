@@ -1,0 +1,20 @@
+.sender-container {
+    width: 50%;
+    margin: 20px auto;
+  }
+  
+  /* receiver.component.css */
+  .receiver-container {
+    width: 50%;
+    margin: 20px auto;
+  }
+  
+  .messages-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .messages-list li {
+    margin: 5px 0;
+  }
